@@ -42,9 +42,9 @@ import { BlogHttpService } from './blog-http.service';
       {path:'',redirectTo:'home',pathMatch:'full'},
       {path:'about',component:AboutComponent},
       {path:'create',component:BlogCreateComponent},
-      {path:'**',component:HomeComponent},
       {path:'blog/:blogId',component:BlogViewComponent},
-      {path:'edit/:blogId',component:BlogEditComponent}
+      {path:'edit/:blogId',component:BlogEditComponent},
+      {path:'**',component:HomeComponent}
     ])
   ],
   providers: [BlogService,BlogHttpService],
